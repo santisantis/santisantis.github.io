@@ -1,37 +1,192 @@
 <!DOCTYPE html>
-<html>
-<title>Test</title>
+<html lang="en">
+<title>W3.CSS Template</title>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
-<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 <style>
-body,h1 {font-family: "Raleway", sans-serif}
-body, html {height: 100%}
-.bgimg {
-  background-image: url('/w3images/forestbridge.jpg');
-  min-height: 100%;
-  background-position: center;
-  background-size: cover;
-}
+body {font-family: "Lato", sans-serif}
+.mySlides {display: none}
 </style>
 <body>
 
-<div class="bgimg w3-display-container w3-animate-opacity w3-text-black">
-  <div class="w3-display-topleft w3-padding-large w3-xlarge">
-    Logo
-  </div>
-  <div class="w3-display-middle">
-    <h1 class="w3-jumbo w3-animate-top">Work in progress</h1>
-    <hr class="w3-border-grey" style="margin:auto;width:40%">
-<!--     <p class="w3-large w3-center">0 days left</p>
-    <p style="font-size:28px;"><a href="https://santisantis.github.io/social2020/">[Link to Social Project at DTU]</a></p> -->
-
-  </div>
-  <div class="w3-display-bottomleft w3-padding-large">
-    Powered by <a href="https://www.w3schools.com/w3css/default.asp" target="_blank">w3.css</a>
+<!-- Navbar -->
+<div class="w3-top">
+  <div class="w3-bar w3-black w3-card">
+    <a class="w3-bar-item w3-button w3-padding-large w3-hide-medium w3-hide-large w3-right" href="javascript:void(0)" onclick="myFunction()" title="Toggle Navigation Menu"><i class="fa fa-bars"></i></a>
+    <a href="#" class="w3-bar-item w3-button w3-padding-large">HOME</a>
+    <a href="#me" class="w3-bar-item w3-button w3-padding-large w3-hide-small">ABOUT ME</a>
+    <a href="#tour" class="w3-bar-item w3-button w3-padding-large w3-hide-small">HOBBY</a>
+    <a href="#contact" class="w3-bar-item w3-button w3-padding-large w3-hide-small">CONTACT</a>
+    <a href="javascript:void(0)" class="w3-padding-large w3-hover-red w3-hide-small w3-right"><i class="fa fa-search"></i></a>
   </div>
 </div>
+
+<!-- Navbar on small screens (remove the onclick attribute if you want the navbar to always show on top of the content when clicking on the links) -->
+<div id="navDemo" class="w3-bar-block w3-black w3-hide w3-hide-large w3-hide-medium w3-top" style="margin-top:46px">
+  <a href="#band" class="w3-bar-item w3-button w3-padding-large" onclick="myFunction()">BAND</a>
+  <a href="#tour" class="w3-bar-item w3-button w3-padding-large" onclick="myFunction()">TOUR</a>
+  <a href="#contact" class="w3-bar-item w3-button w3-padding-large" onclick="myFunction()">CONTACT</a>
+  <a href="#" class="w3-bar-item w3-button w3-padding-large" onclick="myFunction()">MERCH</a>
+</div>
+
+<!-- Page content -->
+<div class="w3-content" style="max-width:2000px;margin-top:46px">
+
+
+
+  <!-- The Band Section -->
+
+  <div class="w3-container w3-content w3-center" style="max-width:2000px" id="band">
+    <h2 class="w3-narrow">Aleksander Santisteban</h2>
+          <div class="w3-container w3-content w3-center" style="max-width:1600px" id="band">
+  <img src="./img/me.jpg" class="w3-center"alt="Random Name" style="width:40%">
+    <p class="w3-opacity" id="me"><i>Computer Scientist and Electrical Engineer</i></p>
+  
+  <div class="w3-container w3-content w3-center" style="max-width:800px">
+  <p class="w3-justify">I am an electrical engineer with Masters in
+      computer science. Problem solving is what
+      I live for. No matter if I am in the office, at
+      the bouldergym or at home I need to have
+      something keeping my brain busy. I like
+      working in a team, but I am also a fast
+      learner, so I don’t need to be babysitted
+      through the process.
+      I speak English, Spanish and Polish fluently.</p>
+  </div>
+  </div>
+    <h2 class="w3-narrow">Projects</h2>
+  <!-- <div class="w3-container w3-content w3-center"> -->
+    <p>2021 - Occupancy modeling based on network traffic analysis (Master Thesis)</p>
+    <p>2021 - Website visualising networks in music
+industry (<a href="url">https://02805.heino.mitspace.dk/</a>)</p>
+  <p>2021 - Website visualising networks in music
+industry (<a href="url">https://02805.heino.mitspace.dk/</a>)</p>
+  <p>2020 - Website visualizing COVID-19 pandemic
+from a global perspective</p>
+  <p>2019 - Participation in The Mars Society’s
+University Rover Challenge 2019 with SKA Robotics (<a href="url">http://urc.marssociety.org/home/about-urc/urc2019-scores</a>)</p>
+  <p>2019 - Programming in Matlab Bluemetrica
+Certificate</p>
+  <p>2019 - Academic IELTS Certificate (Grade: 7.5)</p>
+  <!-- </div> -->
+
+  </div>
+
+  <!-- The Hobby Section -->
+
+  <div class="w3-black" id="tour">
+        
+    <div class="w3-container w3-content w3-padding-64" style="max-width:800px">
+      <h2 class="w3-wide w3-center">HOBBY</h2>
+      <!-- Automatic Slideshow Images -->
+  <div class="mySlides w3-display-container w3-center">
+    <img src="./img/seaside.png" style="width:100%">
+    <div class="w3-display-bottommiddle w3-container w3-text-white w3-padding-32 w3-hide-small">
+      <h3>Hornbæk</h3>
+      <p><b>Summer 2020</b></p>   
+    </div>
+  </div>
+  <div class="mySlides w3-display-container w3-center">
+    <img src="./img/beach.png" style="width:100%">
+    <div class="w3-display-bottommiddle w3-container w3-text-white w3-padding-32 w3-hide-small">
+      <h3>West Jutland</h3>
+      <p><b>Summer 2020</b></p>    
+    </div>
+  </div>
+  <div class="mySlides w3-display-container w3-center">
+    <img src="./img/jaeger.png" style="width:100%">
+    <div class="w3-display-bottommiddle w3-container w3-text-white w3-padding-32 w3-hide-small">
+      <h3>Jægersborg</h3>
+      <p><b>Autumn 2020</b></p>    
+    </div>
+  </div>
+    <p class="w3-justify">Although my studies keep me quite busy, I find some time to spend on my hobbies. As I'm completely hopeless at drawing I like to express myself through photography. Moreover by being a huge music fan I try to play and produce some music. Feel free to checkout my soundcloud page.</p>
+    <div class="w3-center" style="max-width:800px">
+
+    <iframe width="100%" height="300" scrolling="no" frameborder="no" allow="autoplay" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/978547945&color=%23ff5500&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true&visual=true"></iframe><div style="font-size: 10px; color: #cccccc;line-break: anywhere;word-break: normal;overflow: hidden;white-space: nowrap;text-overflow: ellipsis; font-family: Interstate,Lucida Grande,Lucida Sans Unicode,Lucida Sans,Garuda,Verdana,Tahoma,sans-serif;font-weight: 100;"><a href="https://soundcloud.com/djsantioneandonly" title="HoryzontZdarzeń" target="_blank" style="color: #cccccc; text-decoration: none;">HoryzontZdarzeń</a> · <a href="https://soundcloud.com/djsantioneandonly/avas-arpeggios" title="Ava&#x27;s Test" target="_blank" style="color: #cccccc; text-decoration: none;">Ava&#x27;s Test</a></div>
+  </div>
+  </div>
+    </div>
+  </div>
+
+  <!-- Ticket Modal -->
+  <div id="ticketModal" class="w3-modal">
+    <div class="w3-modal-content w3-animate-top w3-card-4">
+      <header class="w3-container w3-teal w3-center w3-padding-32"> 
+        <span onclick="document.getElementById('ticketModal').style.display='none'" 
+       class="w3-button w3-teal w3-xlarge w3-display-topright">×</span>
+        <h2 class="w3-wide"><i class="fa fa-suitcase w3-margin-right"></i>Tickets</h2>
+      </header>
+      <div class="w3-container">
+        <p><label><i class="fa fa-shopping-cart"></i> Tickets, $15 per person</label></p>
+        <input class="w3-input w3-border" type="text" placeholder="How many?">
+        <p><label><i class="fa fa-user"></i> Send To</label></p>
+        <input class="w3-input w3-border" type="text" placeholder="Enter email">
+        <button class="w3-button w3-block w3-teal w3-padding-16 w3-section w3-right">PAY <i class="fa fa-check"></i></button>
+        <button class="w3-button w3-red w3-section" onclick="document.getElementById('ticketModal').style.display='none'">Close <i class="fa fa-remove"></i></button>
+        <p class="w3-right">Need <a href="#" class="w3-text-blue">help?</a></p>
+      </div>
+    </div>
+  </div>
+
+  <!-- The Contact Section -->
+  <div class="w3-container w3-content w3-padding-64" style="max-width:800px" id="contact">
+    <h2 class="w3-wide w3-center">CONTACT</h2>
+    <p class="w3-opacity w3-center"><i>Feel free to drop an email</i></p>
+    <div class="w3-center">
+      <div class="w3-center">
+        <i class="fa fa-map-marker" style="width:30px"></i> Copenhagen, Denmark<br>
+        <i class="fa fa-envelope" style="width:30px"> </i> Email: aleks.santi@gmail.com<br>
+      </div>
+    </div>
+  </div>
+  
+<!-- End Page Content -->
+</div>
+
+<!-- Footer -->
+<footer class="w3-container w3-padding-64 w3-center w3-opacity w3-light-grey w3-xlarge">
+  <p class="w3-medium">Powered by <a href="https://www.w3schools.com/w3css/default.asp" target="_blank">w3.css</a></p>
+</footer>
+
+<script>
+// Automatic Slideshow - change image every 4 seconds
+var myIndex = 0;
+carousel();
+
+function carousel() {
+  var i;
+  var x = document.getElementsByClassName("mySlides");
+  for (i = 0; i < x.length; i++) {
+    x[i].style.display = "none";  
+  }
+  myIndex++;
+  if (myIndex > x.length) {myIndex = 1}    
+  x[myIndex-1].style.display = "block";  
+  setTimeout(carousel, 4000);    
+}
+
+// Used to toggle the menu on small screens when clicking on the menu button
+function myFunction() {
+  var x = document.getElementById("navDemo");
+  if (x.className.indexOf("w3-show") == -1) {
+    x.className += " w3-show";
+  } else { 
+    x.className = x.className.replace(" w3-show", "");
+  }
+}
+
+// When the user clicks anywhere outside of the modal, close it
+var modal = document.getElementById('ticketModal');
+window.onclick = function(event) {
+  if (event.target == modal) {
+    modal.style.display = "none";
+  }
+}
+</script>
 
 </body>
 </html>
